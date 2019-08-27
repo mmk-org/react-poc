@@ -23,6 +23,10 @@ class App extends React.Component {
         {/* left content panel with header and footer */}
         <div className="wrapper">
           <MyHeader />
+            <Route path="/" exact strict render={(routeProps) => (
+                                <MyContent {...routeProps} name='home'/>
+                                )}>
+            </Route>
             <Route path="/home" render={(routeProps) => (
                                 <MyContent {...routeProps} name='home'/>
                                 )}>
