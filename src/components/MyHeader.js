@@ -4,7 +4,7 @@ class MyHeader extends React.Component {
 
     render() {
         return(
-           <div className="myHeader">Header coming soon</div>
+           <div className="header">Header coming soon</div>
         );
     }
 }

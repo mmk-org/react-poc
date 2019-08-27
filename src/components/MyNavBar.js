@@ -18,18 +18,18 @@ class MyNavBar extends React.Component {
                 </nav>
 
                 <Switch>
-                <Route path="/home"  render={(routeProps) => (
-                            <MyContent {...routeProps} name='home'/>
-                            )}>
-                </Route>
-                <Route path="/about"  render={(routeProps) => (
-                            <MyContent {...routeProps} name="about"/>
-                            )}>
-                </Route>
-                <Route path="/skills"  render={(routeProps) => (
-                            <MyContent {...routeProps} name="skills"/>
-                            )}>
-                </Route>
+                    <Route path="/home" render={(routeProps) => (
+                                <MyContent {...routeProps} name='home'/>
+                                )}>
+                    </Route>
+                    <Route path="/about"  render={(routeProps) => (
+                                <MyContent {...routeProps} name="about"/>
+                                )}>
+                    </Route>
+                    <Route path="/skills"  render={(routeProps) => (
+                                <MyContent {...routeProps} name="skills"/>
+                                )}>
+                    </Route>
                 </Switch>
 
             </BrowserRouter>

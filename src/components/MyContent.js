@@ -32,11 +32,15 @@ class MyContent extends React.Component {
             component = (<Home />);
         } else if(this.state.compName === "skills"){
             component = (<Skills />);
+        } else {
+            return (<div />);
         }
         
         return(
-           <div className="myContent">
+           <div className="content">
+               <div className="inner">
                 {component}
+             </div>
            </div>
         );
     }
