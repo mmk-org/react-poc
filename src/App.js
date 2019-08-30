@@ -10,10 +10,11 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         {/* side navbar */}
-        <nav id="my-main-menu" role="navigation" className="navbar">
-          <div id="navbar" className="collapse">
+        <nav role="navigation">
+          <img id="my-image" src="favicon.ico" alt="My Image" />
+          <div>
             <ul>
-              <li className="active"><Link to="/home">Home</Link></li>
+              <li ><Link className="active" to="/home">Home</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/skills">Skills</Link></li>
             </ul>
