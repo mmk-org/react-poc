@@ -97,3 +97,12 @@ ul {
     padding: 5px 15px;
     left: 0;
 } */
+
+.my-clock {
+  float: right;
+  font-weight: bold;
+}
+
+.sub-header {
+  float: left;
+}
