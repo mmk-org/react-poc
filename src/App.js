@@ -3,25 +3,17 @@ import MyHeader from './components/MyHeader';
 import MyFooter from './components/MyFooter';
 import MyContent from './components/MyContent';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import MyNavBar from './components/MyNavBar';
 
 class App extends React.Component {
 
   render() {
     return (
       <BrowserRouter>
-        {/* side navbar */}
-        <nav role="navigation">
-          <img id="my-image" src="favicon.ico" alt="My Image" />
-          <div>
-            <ul>
-              <li ><Link className="active" to="/home">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/skills">Skills</Link></li>
-            </ul>
-          </div>
-        </nav>
+        {/* left side navbar */}
+        <MyNavBar />
 
-        {/* left content panel with header and footer */}
+        {/* right content panel with header and footer */}
         <div className="wrapper">
           <MyHeader />
             <Route path="/" exact strict render={(routeProps) => (

@@ -6,33 +6,18 @@ class MyNavBar extends React.Component {
 
     render() {
         return(
-            <BrowserRouter>
-                <nav id="my-main-menu" role="navigation" className="navbar">
-                    <div id="navbar" className="collapse">
-                        <ul>
-                            <li className="active"><Link to="/home">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/skills">Skills</Link></li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <Switch>
-                    <Route path="/home" render={(routeProps) => (
-                                <MyContent {...routeProps} name='home'/>
-                                )}>
-                    </Route>
-                    <Route path="/about"  render={(routeProps) => (
-                                <MyContent {...routeProps} name="about"/>
-                                )}>
-                    </Route>
-                    <Route path="/skills"  render={(routeProps) => (
-                                <MyContent {...routeProps} name="skills"/>
-                                )}>
-                    </Route>
-                </Switch>
-
-            </BrowserRouter>
+            <nav role="navigation">
+                <img id="my-image" src="favicon.ico" alt="My Image" />
+                <h1 className="my-info">Mangesh K </h1>
+                <span className="my-position">Software Developer in India</span>
+                <div>
+                    <ul>
+                        <li ><Link className="active" to="/home">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/skills">Skills</Link></li>
+                    </ul>
+                </div>
+            </nav>
         );
     }
 }
